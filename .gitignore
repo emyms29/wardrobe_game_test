@@ -9,3 +9,4 @@ export_presets.cfg
 # OS stuff
 .DS_Store
 Thumbs.db
+scene/api_keys.gd

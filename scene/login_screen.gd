@@ -20,7 +20,7 @@ func _ready():
 	error_label.visible = true
 
 func _on_login_success():
-	get_tree().change_scene_to_file("res://scene/HomeScreen.tscn")
+	get_tree().change_scene_to_file("res://scene/main_menu.tscn")
 
 func _on_login_failed(message):
 	error_label.text = str(message)
