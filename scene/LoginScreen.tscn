@@ -1,0 +1,90 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvrebvmaagr"]
+
+[ext_resource type="Script" uid="uid://cyppcoe7fyws2" path="res://scene/login_screen.gd" id="1_7a3k7"]
+
+[node name="LoginScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7a3k7")
+
+[node name="EmailInput" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.27313197
+anchor_top = 0.3829136
+anchor_right = 0.731132
+anchor_bottom = 0.45691362
+offset_left = 0.35198975
+offset_top = -0.12800598
+offset_right = -0.2640381
+offset_bottom = -0.08001709
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Enter Email"
+
+[node name="PasswordInput" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.275
+anchor_top = 0.48900002
+anchor_right = 0.73200005
+anchor_bottom = 0.563
+offset_left = -0.3000183
+offset_top = 0.12799072
+offset_right = 0.23596191
+offset_bottom = 0.17599487
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Enter Password"
+secret = true
+
+[node name="LoginButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35373613
+anchor_top = 0.6881358
+anchor_right = 0.6497361
+anchor_bottom = 0.8011358
+offset_left = -0.5040283
+offset_top = 0.08798218
+offset_right = 0.5040283
+offset_bottom = -0.13598633
+grow_horizontal = 2
+grow_vertical = 2
+text = "Login"
+metadata/_edit_use_anchors_ = true
+
+[node name="error" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2873264
+anchor_top = 0.6412037
+anchor_right = 0.7291667
+anchor_bottom = 0.6412037
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="SignUpButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35677084
+anchor_top = 0.8626543
+anchor_right = 0.6467014
+anchor_bottom = 0.94135803
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="LoginButton" to="." method="_on_login_button_pressed"]
+[connection signal="pressed" from="SignUpButton" to="." method="_on_sign_up_button_pressed"]

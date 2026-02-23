@@ -1,0 +1,11 @@
+# Godot-specific
+.godot/
+*.translation
+export_presets.cfg
+
+# Import cache (can be regenerated)
+.import/
+
+# OS stuff
+.DS_Store
+Thumbs.db
